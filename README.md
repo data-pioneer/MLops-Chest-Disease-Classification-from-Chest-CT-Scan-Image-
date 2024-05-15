@@ -12,6 +12,15 @@
 - CI/CD Pipeline: GitHub Actions automates building, testing, and deployment upon code changes.
 
 
+## Key Technologies:
+
+
+## Project Structure:
+
+
+## Flow Chart of Project Architecture
+
+![MLflow_Chest_Disease_Classification_Project_Architecture](https://github.com/data-pioneer/MLops-Chest-Disease-Classification-from-Chest-CT-Scan-Image-/assets/33811437/a128cac8-8e64-4b9f-bf28-2a2f9d101b6a)
 
 ## Workflows of each component updation
 
