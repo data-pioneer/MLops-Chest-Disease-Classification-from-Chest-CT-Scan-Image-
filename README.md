@@ -20,6 +20,17 @@
 
 ## Project Structure:
 
+-  /src/cnnClassifier/components/ DataIngestion: During this phase CT scan images are downloaded from Google drive using gdown package. Images are preprocessed to normalize the pixel values and stored in local folder.
+-  /src/cnnClassifier/components/ PrepareBaseModel: VGG16, a pre-trained model is used to  prepared a base CNN model. Then I have customized VGG16 model to train on image dataset by dropping output dense layer, adding the custom dense layer as my dataset has two output classes eg: normal or adenocarcinoma.
+-  /src/cnnClassifier/components/ Training: I have trained the custom CNN VGG15 base model on image dataset. Further, image dataset is split into train and testing dataset during this phase.
+-  /src/cnnClassifier/components/ Evaluation: Model's performance is evaluated on a test dataset. Various evaluation metrics are also used to determine its performance like F1-score, accuracy, precision, recall.
+-  Template/index.html: This file contains user interface using flask 
+-  Dvc.yaml: This file contains for DVC pipeline tracking code.
+-  Params.yaml: This file contains model related code.
+-  Config/ config.yaml: constants are  defined inside this file
+-  Dvc.yaml: This file contains code to control pipeline tracking. 
+-  .Jenkins/Jenkinsfile : This file handle the Jenkins pipeline with GitHub. 
+-  .github/workflows/main.yaml : it trigger Jenkins deployment on EC2 instance 1. 
 
 ## Flow Chart of Project Architecture
 
