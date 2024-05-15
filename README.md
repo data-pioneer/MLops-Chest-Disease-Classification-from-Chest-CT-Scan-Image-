@@ -5,15 +5,18 @@
 
 - Machine Learning Model: VGG16 pre-trained convolutional neural network (CNN) for image classification.
 - Download: Images are downloaded from Google Drive (https://drive.google.com/file/d/1zD6V2BSjrO-QWwFPpv7s3JaqtemFoL98/view?usp=sharing).
+
+
+## Key Technologies:
 - Version Control: DVC tracks data versions for reproducibility.
 - Experiment Tracking & Model Registry:
   * MLflow: Logs experiments, tracks metrics, and stores models for comparison and deployment.
   * Dagshub: Collaboratively manages the MLOps pipeline and integrates with MLflow for experiment tracking.
 - CI/CD Pipeline: GitHub Actions automates building, testing, and deployment upon code changes.
-
-
-## Key Technologies:
-
+- Deployment:
+  * Jenkins server running on EC2 instance 1
+  * Containerization with Docker running on Elastic Container Registry
+  * Deployment on AWS EC2 instances 2, application running using flask interface
 
 ## Project Structure:
 
