@@ -1,4 +1,4 @@
-# MLops-Chest-Disease-Classification-from-Chest-CT-Scan-Image
+## MLops-Chest-Disease-Classification-from-Chest-CT-Scan-Image
 
 - This repository implements an MLOps pipeline for classifying chest diseases from chest CT scan images using a VGG16 deep learning model. 
 - The project leverages various tools to ensure efficient development, deployment, and monitoring:
@@ -11,17 +11,9 @@
   * Dagshub: Collaboratively manages the MLOps pipeline and integrates with MLflow for experiment tracking.
 - CI/CD Pipeline: GitHub Actions automates building, testing, and deployment upon code changes.
 
-Getting Started
-
-Prerequisites: Python 3.x, relevant machine learning libraries (e.g., TensorFlow, PyTorch)
-Set Up Environment:
-Clone the repository and install dependencies (pip install -r requirements.txt).
-Configure DVC remote storage (replace with your preferred storage method).
-Configure Dagshub access (if applicable).
 
 
-
-## Workflows
+## Workflows of each component updation
 
 1. Update config.yaml
 2. Update params.yaml
@@ -33,8 +25,6 @@ Configure Dagshub access (if applicable).
 8. Update the dvc.yaml 
 
 
-
-## Live matarials docs
 
 ## Git commands
 
