@@ -34,6 +34,9 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
+    saved_model_path : Path
+
+
 
 
 
@@ -45,3 +48,6 @@ class EvaluationConfig:
     mlflow_uri: str
     params_image_size: list
     params_batch_size: int
+
+
+    

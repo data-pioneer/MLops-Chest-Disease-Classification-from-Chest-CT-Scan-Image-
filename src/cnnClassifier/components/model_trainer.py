@@ -5,6 +5,7 @@ import tensorflow as tf
 import time
 from cnnClassifier.entity.config_entity import TrainingConfig
 from pathlib import Path
+import shutil
 
 class Training:
     def __init__(self, config: TrainingConfig):
@@ -62,9 +63,11 @@ class Training:
 
     
     @staticmethod
-    def save_model(path: Path, model: tf.keras.Model):
+    def save_model(path: Path, model: tf.keras.Model,saved_model_path: Path):
         model.save(path)
-
+        if not os.path.exists(os.path.dirname(saved_model_path)):
+            os.makedirs(os.path.dirname(saved_model_path), exist_ok=True)  # Create directories if they don't exist
+        shutil.copy2(path, saved_model_path)
 
 
     
@@ -82,6 +85,7 @@ class Training:
 
         self.save_model(
             path=self.config.trained_model_path,
-            model=self.model
+            model=self.model,
+            saved_model_path = self.config.saved_model_path
         )
 
