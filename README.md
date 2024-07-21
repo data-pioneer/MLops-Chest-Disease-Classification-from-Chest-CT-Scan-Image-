@@ -105,3 +105,17 @@ export MLFLOW_TRACKING_PASSWORD=""
 2. dvc repro
 3. dvc dag
 
+### Deployment Screens
+
+
+![0](https://github.com/user-attachments/assets/4af9f8a1-d264-400e-b419-8e87f6e2a2ff)
+
+![1](https://github.com/user-attachments/assets/de8be80c-b37f-4f6b-897a-c296e15880ba)
+
+![2](https://github.com/user-attachments/assets/7b6615af-37ff-409f-9e93-f065513c2054)
+
+![3](https://github.com/user-attachments/assets/b81f7354-c4a6-43b5-9a74-d44c1d67dfaf)
+
+![4](https://github.com/user-attachments/assets/57031d35-4d60-4774-a94a-0bbf0ce25737)
+
+![5](https://github.com/user-attachments/assets/eb2c8ed1-e83c-4a02-bade-f65c7c71d395)
